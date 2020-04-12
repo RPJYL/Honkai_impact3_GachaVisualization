@@ -50,7 +50,7 @@
       }
       //对文本框求和
       function sumInput(name) {
-        let obj = document.getElementsByName(name), sum = 0, weight = [0.02479, 0.01240, 0.00413, 0.00410];
+        let obj = document.getElementsByName(name), sum = 0, weight = [0.02479, 0.01240, 0.00413, 0.00410]; //weight即为各类装备的概率[UP武器，UP圣痕，UP外武器，UP外圣痕]
         for (let i = 0; i < obj.length; i++) {
           sum += obj[i].value * weight[i];
         }
