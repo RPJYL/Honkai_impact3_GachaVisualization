@@ -31,7 +31,7 @@
       </tbody>
     </table>
     <p>注：圣痕以件为单位。
-      <br/>一般概率：UP武器<b>2.479</b>%，UP圣痕<b>1.240</b>%，UP外武器<b>0.413</b>%，UP外圣痕<b>0.410</b>%。
+      <br/>一般概率：UP武器<b>2.479</b>%，UP圣痕<b>1.240</b>%，UP外武器<b>0.413</b>%，UP外圣痕<b>0.310</b>%。
       <br/>一般数量：UP武器1件，UP圣痕3件，UP外武器6件，UP外圣痕12件。
     </p>
     <button id="submit" onclick="draw()">生成</button>
@@ -50,7 +50,7 @@
       }
       //对文本框求和
       function sumInput(name) {
-        let obj = document.getElementsByName(name), sum = 0, weight = [0.02479, 0.01240, 0.00413, 0.00410]; //weight即为各类装备的概率[UP武器，UP圣痕，UP外武器，UP外圣痕]
+        let obj = document.getElementsByName(name), sum = 0, weight = [0.02479, 0.01240, 0.00413, 0.00310]; //weight即为各类装备的概率[UP武器，UP圣痕，UP外武器，UP外圣痕]
         for (let i = 0; i < obj.length; i++) {
           sum += obj[i].value * weight[i];
         }
